@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import CartItemCard from './CartItemCard'
 import delivery from '../assests/delivery.png'
+
 const LeftSide = ({data ,show}) => {
     const cartItems = useSelector(state=>state.cart.cartItems)
     const user = useSelector(state=>state.user)
@@ -30,12 +31,12 @@ const LeftSide = ({data ,show}) => {
                       <span>{cartItems?cartItems?.length:0}</span>
                       <BsCart3/>
                   </div></Link>)}
-                  <div className="icon" onClick={()=>setShow(!showNoti)} >
+                  {/* <div className="icon" onClick={()=>setShow(!showNoti)} >
                     
-                  {  data?.length===undefined?null:<span>{data?.filter(item=>item.inStockItem<=3).length} </span>}
+                  {  data?.length===undefined ? null:<span>{data?.filter(item=>item.inStockItem<=3).length} </span>}
                       <IoNotificationsOutline/>
                       
-                  </div>
+                  </div> */}
                   {showNoti&&(<div className='waring-noti'>
                   {
                         data?.map((item,i)=>{
@@ -47,7 +48,7 @@ const LeftSide = ({data ,show}) => {
                       }
                   </div>)}
             </div>
-           { show?null:(<div className="sidebar-msg">
+            {/* { show?null:(<div className="sidebar-msg">
                 <div className="img">
                     <img src={delivery} alt="" />
                 </div>
@@ -55,7 +56,7 @@ const LeftSide = ({data ,show}) => {
                     <h2>Safe Delivery <span>@</span> your doors</h2>
                 </div>
             </div>)}
-           { show?null:(<div className="side-cart-area">
+          { show?null:(<div className="side-cart-area">
                 <div className="text">
                     <h4>Order Menu</h4>
                     <Link to='/cart'><p>Veiw All <BsFillArrowRightSquareFill/></p></Link>
@@ -69,7 +70,7 @@ const LeftSide = ({data ,show}) => {
                       </div>
                 </div>
             </div>)}
-           
+            */}
             
         </div>
     )

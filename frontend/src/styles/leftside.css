@@ -1,21 +1,25 @@
 @import "./vars.css";
+
 .leftside {
-  width: 30%;
+  width: 100%;
   height: 100%;
-  background: #fff;
+  /* background: #fff; */
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
   padding: 0px 20px;
 }
+
 .leftside .header {
   width: 100%;
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  position: relative;
 }
+
 .header .icon {
   padding: 10px;
   display: flex;
@@ -26,6 +30,7 @@
   transition: all 0.3s ease-in-out;
   position: relative;
 }
+
 .header .icon span {
   padding: 3px 10px;
   border-radius: 50%;
@@ -40,31 +45,38 @@
   top: -3px;
   box-shadow: 0px 0px 3px var(--primary);
 }
+
 .header .icon:hover {
   background: var(--primary);
   color: #fff;
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 0px 10px var(--primary);
 }
+
 .header .icon svg {
   font-size: 26px;
   font-weight: bold;
 }
+
 .all-items.side-cart h2 {
   font-size: 15px;
 }
+
 .all-items.side-cart h3 {
   font-size: 15px;
 }
+
 .all-items.side-cart .img img {
   height: 50px;
   width: 50px;
 }
+
 .all-items.side-cart .cart-card {
   height: 100px;
   padding: 10px;
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.151);
 }
+
 .side-cart-area {
   display: flex;
   align-items: flex-start;
@@ -72,21 +84,25 @@
   width: 100%;
   flex-direction: column;
 }
+
 .side-cart-area .text {
   width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .side-cart-area .text p {
   color: var(--primary);
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .side-cart-area .text p svg {
   margin-left: 10px;
 }
+
 .side-cart-area button {
   width: 320px;
   border-radius: 3px !important;
@@ -94,9 +110,11 @@
   margin-top: 10px;
   box-shadow: 0px 0px 4px var(--primary);
 }
+
 .user-info {
   margin-right: 20px;
 }
+
 .user-profile-icon {
   height: 40px;
   width: 40px;
@@ -108,6 +126,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .sidebar-msg {
   width: 100%;
   display: flex;
@@ -117,33 +136,45 @@
   margin-bottom: 2rem;
   padding: 20px;
 }
+
 .sidebar-msg h2 {
   color: var(--text-gary);
 }
+
 .sidebar-msg h2 span {
   color: var(--primary);
 }
+
 .sidebar-msg .img img {
   width: 300px;
 }
+
 .waring-noti {
   position: fixed;
   top: 80px;
 }
-.waring-noti div{
+
+.waring-noti div {
   background: rgba(255, 0, 0, 0.411);
   color: #fff;
   font-size: 17px;
   border-radius: 6px;
   padding: 8px;
-  
+
   margin: 10px;
-  
+
 }
 
 @media (max-width: 1104px) {
   .leftside {
-    width: 0px;
+    width: 100%;
+   
+  }
+}
+
+@media (max-width: 768) {
+  .leftside {
+    width: 100%;
     display: none;
   }
 }

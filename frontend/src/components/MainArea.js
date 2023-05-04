@@ -11,7 +11,7 @@ const MainArea = () => {
     
     return (
         <div className='mainarea'>
-            <Header/>
+            {/* <Header/> */}
             <div className="banner">
                 <div className="img">
                     <img src={pizzaboy} alt="" />

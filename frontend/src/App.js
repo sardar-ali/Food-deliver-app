@@ -18,11 +18,13 @@ import Address from './pages/Address'
 import Admin from './pages/Admin'
 import AdminOrders from './pages/AdminOrders'
 import AddProduct from './pages/AddProduct'
+import Header from './components/Header'
 const App = () => {
     return (
         
         <Router>
             <Fragment>
+            <Header />
             <main>
             <Routes>
               <Route path="/" element={<Home/>} />

@@ -8,7 +8,7 @@ const Home = () => {
         <>
           <SideBar/>
           <MainArea/>
-          <LeftSide/>  
+          {/* <LeftSide/>   */}
         </>
     )
 }
