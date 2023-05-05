@@ -24,7 +24,7 @@ const Search = () => {
       <>
       <SideBar/>
        <div className='mainarea  main-search'>
-         <Header/>
+         {/* <Header/> */}
          <h3>search result: {data?.length} for {query}</h3>
          <div className="all-list search">
          <div className='all-products'>
@@ -42,7 +42,7 @@ const Search = () => {
         </div>
             </div>
          </div>
-         <LeftSide/>
+         {/* <LeftSide/> */}
       </>
   );
 };

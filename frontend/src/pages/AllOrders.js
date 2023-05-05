@@ -28,7 +28,7 @@ const AllOrders = () => {
       <>
       <SideBar/>
        <div className='mainarea all-oredrs'>
-         <Header/>
+         {/* <Header/> */}
          <div className="all-orders-area">
            <h2>My Orders</h2>
            <div className="display-orders">
@@ -63,7 +63,7 @@ const AllOrders = () => {
            </div>
          </div>
         </div>
-      <LeftSide/>
+      {/* <LeftSide/> */}
       </>
   );
 };

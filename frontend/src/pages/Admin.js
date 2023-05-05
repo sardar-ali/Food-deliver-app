@@ -50,7 +50,7 @@ const Admin = () => {
     <> 
      <SideBar/>   
     <div className='mainarea admin '>
-    <Header/>
+    {/* <Header/> */}
     <div className="admin-items">
         <div className="admin-item">
             <p>Image</p>
@@ -75,7 +75,7 @@ const Admin = () => {
      }
     </div>
     </div>
-    <LeftSide data={data} show/>
+    {/* <LeftSide data={data} show/> */}
     </>
 
   )

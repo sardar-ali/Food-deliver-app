@@ -19,7 +19,7 @@ const AdminOrders = () => {
     <>
     <SideBar/>   
     <div className='mainarea admin '>
-    <Header/>
+    {/* <Header/> */}
     <div className="all-orders-area">
            <h2>All Orders</h2>
            <div className="display-orders">

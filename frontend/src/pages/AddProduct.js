@@ -44,7 +44,7 @@ const AddProduct = () => {
     <>
     <SideBar/>
     <div className='mainarea admin '>
-        <Header/>
+        {/* <Header/> */}
 
         <div className='auth'>
             <div className="form">

@@ -177,4 +177,7 @@
     width: 100%;
     display: none;
   }
+  .hide-icon { 
+    display: none;
+  }
 }

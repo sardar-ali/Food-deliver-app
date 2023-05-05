@@ -29,7 +29,7 @@ const Address = () => {
     <>
     <SideBar/>
     <div className='mainarea'>
-    <Header/>
+    {/* <Header/> */}
     <div className="address">
         <h3>Your addresAddress</h3>
         <div className="add-sec-area">
@@ -57,7 +57,7 @@ const Address = () => {
         </div>
        </div>
     </div>
-    <LeftSide/>
+    {/* <LeftSide/> */}
     <AddressModal show={show} setShow={setShow} addressToEdit={addressToEdit}/>
     </>
   )

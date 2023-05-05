@@ -178,7 +178,7 @@ const CustomPizza = () => {
     <SideBar/>
     
     <div className='mainarea'>
-    <Header/>
+    {/* <Header/> */}
          <h2>Pizza Builder</h2>
          <div className="pizz-builder-section">
             <div className="upper-section">
@@ -261,7 +261,7 @@ const CustomPizza = () => {
             
          </div>
     </div>
-    <LeftSide/>
+    {/* <LeftSide/> */}
     </>
   )
 }

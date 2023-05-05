@@ -33,7 +33,7 @@ if(text==='mob'){
       <>
        <SideBar/>
        <div className='mainarea all-oredrs'>
-         <Header/>
+         {/* <Header/> */}
          <div className="profile-section">
            {
              user?(
@@ -69,7 +69,7 @@ if(text==='mob'){
              
          </div>
        </div>
-       <LeftSide/>
+       {/* <LeftSide/> */}
       </>
   );
 };
