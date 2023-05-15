@@ -81,9 +81,9 @@ const ProductCard = ({product}) => {
             {
                 product?.map((item,i)=>(
                   <div key={i} className='product-card'>
-                      {pathname!=="/wishlist"&&<div className="love" value={item._id} onClick={(e)=>wishlist?.wishlistItems?.find(x=>x.product=== item._id)?handleRemoveWishlist(item._id) :handleWishlist(item)}>
+                      {/* {pathname!=="/wishlist"&&<div className="love" value={item._id} onClick={(e)=>wishlist?.wishlistItems?.find(x=>x.product=== item._id)?handleRemoveWishlist(item._id) :handleWishlist(item)}>
                           {getState(item,item._id)}
-                      </div>}
+                      </div>} */}
                       <div className="img">
                           <img src={item?.image} alt="" />
                       </div>

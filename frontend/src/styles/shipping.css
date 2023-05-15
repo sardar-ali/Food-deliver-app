@@ -246,7 +246,8 @@
 
   .shipping-details .checkout-area {
     width: 95%;
-    margin-left: 5rem;
+    margin-left: 4rem;
+    margin-top: 3rem;
     margin-right: 4rem;
   }
 
@@ -267,4 +268,13 @@
   .address {
     width: 100%;
   }
+
+  .address .cart-area .cart-card p.des {
+    font-size: 13px;
+    padding-top: 10px;
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 }
