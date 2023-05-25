@@ -15,8 +15,7 @@ export const addToCart=(item)=>async (dispatch,getState)=>{
          customItem:item.customItem?item.customItem:[],
          isCustom:item.isCustom?item.isCustom:false,
          qty:1
-        }
-        })
+        }})
     localStorage.setItem('cartItems',JSON.stringify( getState().cart.cartItems)) 
  } catch (error) {
      dispatch({type:ERROR,payload:'Failed to Add!'})

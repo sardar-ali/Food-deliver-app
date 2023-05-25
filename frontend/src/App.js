@@ -19,9 +19,9 @@ import Admin from './pages/Admin'
 import AdminOrders from './pages/AdminOrders'
 import AddProduct from './pages/AddProduct'
 import Header from './components/Header'
+
 const App = () => {
     return (
-        
         <Router>
             <Fragment>
             <Header />
@@ -48,8 +48,6 @@ const App = () => {
              </main>
             </Fragment>
         </Router>
-         
-        
     )
 }
 

@@ -18,12 +18,9 @@ export const placeOrder=(order)=> async (dispatch,getState)=>{
          }
       })
      
-      console.log("data","=>",data?.order.orderItems)
       data?.order.orderItems?.map((item)=>{
-         console.log("exicution")
          const docRef = doc(firestore, db.pizzas,item.name);
         getDoc(docRef).then((docSnap)=>{
-           console.log(docSnap.data())
          const inStockItem= docSnap.data().inStockItem
           const ref = doc(firestore,db.pizzas,item.name);
           updateDoc(ref, {

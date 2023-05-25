@@ -19,8 +19,6 @@ const Payment = () => {
       navigate('/order')
     }
 
-    console.log(paymentType)
-
     useEffect(()=>{
       if(!user){
           navigate('/signin')
